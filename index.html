@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ryan & Dalton Final project CSET 115</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<div class="container">
+    <header class="header">
+        <h1>Dr. Food</h1>
+        <ion-icon class="restaurant" name="restaurant-outline"></ion-icon>
+        <nav>
+            <ul>
+                <li><a href="#" type="button" id="signup">Signup</a></li>
+                <li><a href="#" type="button" id="login">Login</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="formContainer">
+        <div class="formSection formSection-hidden" id="formSection1">
+        <form class="signupForm">
+            Sign Up
+            <input type="text" id="username" placeholder="Select Username">
+            <ion-icon class="personIcon" name="person-outline" id="signupFormToolTip"></ion-icon>
+            <span class="tooltip tooltip-hidden">Message about username requirements</span>
+            <input type="password" id="password" placeholder="Select Password">
+            <ion-icon class="lockIcon showPassword1" name="lock-closed-outline"></ion-icon>
+            <button class="btn" type="button" id="submitBtn">Submit</button>
+        </form>
+    </div>
+    <div class="formSection formSection-hidden" id="formSection2">
+        <form class="loginForm">
+            Login
+            <input type="text" id="usernameLogin" placeholder="Enter your Username">
+            <ion-icon class="personIcon" name="person-outline"></ion-icon>
+            <input type="password" id="passwordLogin" placeholder="Enter your Password">
+            <ion-icon class="lockIcon showPassword2" name="lock-closed-outline"></ion-icon>
+            <button class="btn" type="button" id="loginBtn">Login</button>
+        </form>
+    </div>
+</div>
+    <div class="welcome">
+        <h1>WELCOME TO DR. FOOD</h1>
+    </div> 
+    <div class="maincontent">
+        <h2>Our Mission</h2>
+        <p>Our mission is to provide the best food for our customers. We want to make sure that our customers are happy with our products and that they are getting the best food possible.</p>
+        <h2>How to use Dr. Food</h2>
+        <p>Dr. Food is very easy to use. Simply click on the signup button to create an account. Once you have created an account, you can login to your account and go to our home page to check out our products!</p>
+    </div>
+</div>
+<footer class="footer">
+        <p>Dr. Food &copy; 2021</p>
+        <h1>By Dalton & Ryan</h1>
+</footer>  
+</div>
+
+
+<div class="redirect-hidden redirect">
+    <img src="images/success.gif" alt="">
+        <h2 class="redirectContent">redirecting...</h2>
+</div>
+<div class="redirect-hidden redirect redirectError">
+    <img src="images/error.gif" alt="">
+    <h2 class="redirectContent1">Error Try again</h2>
+</div>
+
+
+    <script src="script.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+</html>
